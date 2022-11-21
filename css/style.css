@@ -70,9 +70,6 @@ body{
 }
 
 @media(max-width: 500px){
-    body{
-        margin-top: 75px;
-    }
     .game{
         max-width: 500px;
         padding: 0 1rem;
