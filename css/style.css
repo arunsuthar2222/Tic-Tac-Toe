@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@500&family=Poppins&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-image: linear-gradient(rgba(164, 112, 220, 0.9), rgba(97, 56, 148, 0.9));
+}
+.btns{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 5px;
+}
+.btn,.btn:disabled{
+    color: #fff;
+    border: 2px solid rgb(92, 36, 153);
+    font-size: 60px;
+    padding: 1rem 1.75rem;
+    border-radius: 10px;
+    height: 110px;
+    width: 110px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #5c01d38d;
+}
+.btn:hover{
+    cursor: pointer;
+    background: #5c01d3;
+    
+}
+.btn:active{
+    transform: scale(0.97);
+}
+.btn:disabled:active{
+    transform: none
+}
+.lead{
+    text-align: center;
+    font-size: 18px;
+    margin: 20px;
+    color: #fff;
+}
+#strong{
+    padding-left: 5px;
+    font-weight: bold;
+    font-size: 20px;
+}
+#again{
+    display: block;
+    margin: auto;
+    padding: 0.5rem 1rem;
+    font-size: 18px;
+    font-weight: 600;
+    color: #333;
+    background: rgb(205, 187, 255);
+    border: none;
+    border-radius: 5px;
+    
+}
+#again:hover{
+    cursor: pointer;
+}
+
+@media(max-width: 500px){
+    body{
+        align-items: flex-start;
+        margin-top: 75px;
+    }
+    .game{
+        max-width: 500px;
+        padding: 0 1rem;
+    }
+}
