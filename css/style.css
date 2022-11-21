@@ -71,7 +71,6 @@ body{
 
 @media(max-width: 500px){
     body{
-        align-items: flex-start;
         margin-top: 75px;
     }
     .game{
